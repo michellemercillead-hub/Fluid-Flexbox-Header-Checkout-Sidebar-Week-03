@@ -10,17 +10,17 @@
   <!-- COMPONENT 1: MULTI-TIER HEADER -->
   <header class="site-header">
     <!-- Top Utility Bar -->
-    <div class="header__utility">
+    <section class="header__utility" aria-label="Store information">
       <span class="utility__promo">Free shipping on orders over $50!</span>
       <nav class="utility__nav">
         <a href="#support">Support</a>
         <a href="#stores">Find a Store</a>
       </nav>
-    </div>
+    </section>
     
     <!-- Main Navigation Bar -->
-    <div class="header__main">
-      <div class="header__logo">StyleStore</div>
+    <section class="header__main" aria-label="Main navigation">
+      <a class="header__logo" href="/">StyleStore</a>
       <nav class="header__nav">
         <ul class="nav__list">
           <li><a href="#new">New Arrivals</a></li>
@@ -29,14 +29,14 @@
         </ul>
       </nav>
       <div class="header__actions">
-        <button class="btn-icon">🔍</button>
-        <button class="btn-icon">🛒 <span class="cart-count">2</span></button>
+        <button class="btn-icon" type="button" aria-label="Search">🔍</button>
+        <button class="btn-icon" type="button" aria-label="View cart">🛒 <span class="cart-count">2</span></button>
       </div>
-    </div>
+    </section>
   </header>
 
   <!-- COMPONENT 2: CHECKOUT PAGE WRAPPER (Side-by-Side Layout) -->
-  <div class="checkout-container">
+  <section class="checkout-container" aria-label="Checkout">
     <main class="checkout-form-placeholder">
       <h2>Shipping Details</h2>
       <p>Imagine your interactive shipping form inputs living right here...</p>
@@ -48,7 +48,7 @@
       
       <ul class="summary__items">
         <li class="summary-item">
-          <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=100" alt="Minimalist T-Shirt" class="summary-item__img">
+          <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=140&q=75" alt="Minimalist T-Shirt" class="summary-item__img" width="70" height="70" loading="lazy" decoding="async">
           <div class="summary-item__details">
             <span class="summary-item__name">Classic Crewneck T-Shirt</span>
             <span class="summary-item__qty">Qty: 1</span>
@@ -56,7 +56,7 @@
           <span class="summary-item__price">$28.00</span>
         </li>
         <li class="summary-item">
-          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=100" alt="Red Sneakers" class="summary-item__img">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=140&q=75" alt="Red Sneakers" class="summary-item__img" width="70" height="70" loading="lazy" decoding="async">
           <div class="summary-item__details">
             <span class="summary-item__name">Retro Runners</span>
             <span class="summary-item__qty">Qty: 1</span>
@@ -65,22 +65,22 @@
         </li>
       </ul>
 
-      <div class="summary__totals">
+      <dl class="summary__totals">
         <div class="totals-line">
-          <span>Subtotal</span>
-          <span>$113.00</span>
+          <dt>Subtotal</dt>
+          <dd>$113.00</dd>
         </div>
         <div class="totals-line">
-          <span>Shipping</span>
-          <span>FREE</span>
+          <dt>Shipping</dt>
+          <dd>FREE</dd>
         </div>
         <div class="totals-line totals-line--grand">
-          <span>Total</span>
-          <span>$113.00</span>
+          <dt>Total</dt>
+          <dd>$113.00</dd>
         </div>
-      </div>
+      </dl>
     </aside>
-  </div>
+  </section>
 
 </body>
 </html>
