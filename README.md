@@ -36,7 +36,4 @@ Credits
 -------
 This README (and parts of the stylesheet) were created with assistance from an AI to speed up authoring and ensure modern best practices were applied.
 
-If you want, I can:
-- Add a quick visual screenshot.
-- Add browser-compatibility notes or a small CSS fallback for older browsers (IE11).
-- Convert the project into a tiny dev server workflow (npm + live-server).
+
