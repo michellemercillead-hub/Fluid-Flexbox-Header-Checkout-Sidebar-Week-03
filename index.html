@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 3 Lab: Flexbox Interfaces</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- COMPONENT 1: MULTI-TIER HEADER -->
+  <header class="site-header">
+    <!-- Top Utility Bar -->
+    <div class="header__utility">
+      <span class="utility__promo">Free shipping on orders over $50!</span>
+      <nav class="utility__nav">
+        <a href="#support">Support</a>
+        <a href="#stores">Find a Store</a>
+      </nav>
+    </div>
+    
+    <!-- Main Navigation Bar -->
+    <div class="header__main">
+      <div class="header__logo">StyleStore</div>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li><a href="#new">New Arrivals</a></li>
+          <li><a href="#shop">Shop All</a></li>
+          <li><a href="#sale">Sale</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="btn-icon">🔍</button>
+        <button class="btn-icon">🛒 <span class="cart-count">2</span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- COMPONENT 2: CHECKOUT PAGE WRAPPER (Side-by-Side Layout) -->
+  <div class="checkout-container">
+    <main class="checkout-form-placeholder">
+      <h2>Shipping Details</h2>
+      <p>Imagine your interactive shipping form inputs living right here...</p>
+    </main>
+
+    <!-- The Checkout Sidebar Summary List -->
+    <aside class="checkout-summary">
+      <h3 class="summary__title">Order Summary</h3>
+      
+      <ul class="summary__items">
+        <li class="summary-item">
+          <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=100" alt="Minimalist T-Shirt" class="summary-item__img">
+          <div class="summary-item__details">
+            <span class="summary-item__name">Classic Crewneck T-Shirt</span>
+            <span class="summary-item__qty">Qty: 1</span>
+          </div>
+          <span class="summary-item__price">$28.00</span>
+        </li>
+        <li class="summary-item">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=100" alt="Red Sneakers" class="summary-item__img">
+          <div class="summary-item__details">
+            <span class="summary-item__name">Retro Runners</span>
+            <span class="summary-item__qty">Qty: 1</span>
+          </div>
+          <span class="summary-item__price">$85.00</span>
+        </li>
+      </ul>
+
+      <div class="summary__totals">
+        <div class="totals-line">
+          <span>Subtotal</span>
+          <span>$113.00</span>
+        </div>
+        <div class="totals-line">
+          <span>Shipping</span>
+          <span>FREE</span>
+        </div>
+        <div class="totals-line totals-line--grand">
+          <span>Total</span>
+          <span>$113.00</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+</body>
+</html>
